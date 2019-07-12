@@ -53,6 +53,10 @@
      align-items: center;
    }
 
+   .minecraft{
+     height: 250px;
+   }
+
    .nav-item{
      display: inline;
      padding: 10px;
