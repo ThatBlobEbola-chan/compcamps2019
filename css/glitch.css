@@ -1,0 +1,91 @@
+   body {
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D0007;
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+   }
+
+   .text {
+    padding: 10px;
+    color: #fefefe;
+   }
+
+   .text--glitch {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bold;
+   }
+
+   .text--para {
+     color: #fefefe;
+     font-size: 25px;
+     font-weight: bold;
+   }
+
+   .text--hover {
+    font-family: serif;
+    font-size: 60px;
+   }
+
+   .text--glitch,
+   .text--hover:hover{
+    animation: animate .5s linear infinite;
+   }
+
+   .text--para,
+   .text--hover:hover{
+     animation: animate 5s linear infinite
+   }
+
+   .nav-item,
+   .text--hover:hover{
+     animation: animate 5s linear infinite
+   }
+
+   .funnyimage{
+     align-items: center;
+   }
+
+   .nav-item{
+     display: inline;
+     padding: 10px;
+     font-size: 20px
+   }
+
+   .nav-link{
+     text-decoration: none;
+     color: #FFA79D;
+   }
+
+   .nav{
+     margin: 0px 0px 0px 0px;
+     padding: 0px;
+     background-color: #9E0007;
+   }
+
+   .nav-container{
+     margin: 0px;
+     padding: 0px;
+   }
+
+   @keyframes animate {
+    0%, 100% {
+     text-shadow: -2px -2px 0 red, 3px 3px 0 red;
+    }
+    25% {
+     text-shadow: 3px 3px 0 red, -2px -2px 0 red;
+    }
+    50% {
+     text-shadow: 2px -3px 0 red, -3px 2px 0 red;
+    }
+    75% {
+     text-shadow: -3px 2px 0 red, 2px -3px 0 red;
+    }
+   }
